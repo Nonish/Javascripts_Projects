@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+body{
+    font-family: 'Palette Mosaic', cursive;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+  
+.hex-colors{
+    width: 100%;
+    text-align: center;
+    
+
+} 
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 5s infinite alternate;
+    /* border: 1px solid black; */
+
+}
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+    /* border: 1px solid black; */
+    
+
+}
+
+@keyframes changecolor{
+    0%{
+        color: blueviolet;
+    }
+    20%{
+        color: yellow;
+    }
+    40%{
+        color: blue;
+    }
+    60%{
+        color: teal;
+    }
+    80%{
+        color: crimson;
+    }
+    100%{
+        color: khaki;
+    }
+}
+
+@media(max-width:480px){
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+    
+    .hex-colors h2{
+        font-size: 1.5rem; 
+    }
+
+}

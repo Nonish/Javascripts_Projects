@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+body {
+    font-family: 'Pinyon Script', cursive;
+    background-color: orange;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+}
+
+#groceries {
+    width: 600px;
+    min-height: 100vh;
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.50);
+}
+
+#title {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#input {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+#input i {
+    cursor: pointer;
+    font-size: 2rem;
+    color: orange;
+}
+
+#input input {
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    font-size: 1.5rem;
+    border-bottom: 3px solid black;
+}
+
+#allitems {
+    font-size: 1.5rem;
+    width: 75%;
+    text-align: left;
+}
+
+@media(max-width:480px) {
+    #title {
+        font-size: 1rem;
+    }
+    #input i {
+        font-size: 1.5rem;
+    }
+    #input input {
+        font-size: 1rem;
+    }
+    #allItems {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
